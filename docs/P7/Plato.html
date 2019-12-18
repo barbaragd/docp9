@@ -1,0 +1,1399 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  Class: P7::Plato
+  
+    &mdash; Documentation by YARD 0.9.20
+  
+</title>
+
+  <link rel="stylesheet" href="../css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="../css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  pathId = "P7::Plato";
+  relpath = '../';
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div class="nav_wrap">
+      <iframe id="nav" src="../class_list.html?1"></iframe>
+      <div id="resizer"></div>
+    </div>
+
+    <div id="main" tabindex="-1">
+      <div id="header">
+        <div id="menu">
+  
+    <a href="../_index.html">Index (P)</a> &raquo;
+    <span class='title'><span class='object_link'><a href="../P7.html" title="P7 (module)">P7</a></span></span>
+     &raquo; 
+    <span class="title">Plato</span>
+  
+</div>
+
+        <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="../class_list.html">
+
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
+  
+</div>
+        <div class="clear"></div>
+      </div>
+
+      <div id="content"><h1>Class: P7::Plato
+  
+  
+  
+</h1>
+<div class="box_info">
+  
+  <dl>
+    <dt>Inherits:</dt>
+    <dd>
+      <span class="inheritName">Object</span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next">P7::Plato</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+    </dd>
+  </dl>
+  
+
+  
+  
+  
+  
+  <dl>
+      <dt>Includes:</dt>
+      <dd>Comparable</dd>
+  </dl>
+  
+  
+
+  
+
+  
+  <dl>
+    <dt>Defined in:</dt>
+    <dd>lib/P7/plato.rb</dd>
+  </dl>
+  
+</div>
+
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>Clase que permite calcular el porcentaje de proteínas, de lípidos, de hidratos de carbono, y el valor enérgetico, del plato formado por varios alimento.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Author:</p>
+<ul class="author">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>Bárbara Valentina García Deus</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><div id="subclasses">
+  <h2>Direct Known Subclasses</h2>
+  <p class="children"><span class='object_link'><a href="Menu.html" title="P7::Menu (class)">Menu</a></span></p>
+</div>
+
+
+
+
+  <h2>Instance Attribute Summary <small><a href="#" class="summary_toggle">collapse</a></small></h2>
+  <ul class="summary">
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#alimentos-instance_method" title="#alimentos (instance method)">#<strong>alimentos</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+      <span class="note title readonly">readonly</span>
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Alimentos del plato.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#gramos-instance_method" title="#gramos (instance method)">#<strong>gramos</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+      <span class="note title readonly">readonly</span>
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Gramos de cada uno de los alimentos.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#nombre-instance_method" title="#nombre (instance method)">#<strong>nombre</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+      <span class="note title readonly">readonly</span>
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Nombre del plato.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#por_ch-instance_method" title="#por_ch (instance method)">#<strong>por_ch</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+      <span class="note title readonly">readonly</span>
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Calcular el porcentaje de hidratos de carbono del plato.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#por_lip-instance_method" title="#por_lip (instance method)">#<strong>por_lip</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+      <span class="note title readonly">readonly</span>
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Porcentaje de Lípidos del plato.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#por_prot-instance_method" title="#por_prot (instance method)">#<strong>por_prot</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+      <span class="note title readonly">readonly</span>
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Porcentaje de Proteínas del plato.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#vctotal-instance_method" title="#vctotal (instance method)">#<strong>vctotal</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+      <span class="note title readonly">readonly</span>
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Valor energético total del palto.</p>
+</div></span>
+  
+</li>
+
+    
+  </ul>
+
+
+
+
+  
+    <h2>
+      Instance Method Summary
+      <small><a href="#" class="summary_toggle">collapse</a></small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#initialize-instance_method" title="#initialize (instance method)">#<strong>initialize</strong>(nombre)  &#x21d2; Plato </a>
+    
+
+    
+  </span>
+  
+  
+    <span class="note title constructor">constructor</span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Initialize que tiene como atributos el conjunto de alimentos, con sus respectivos gramos.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#insertar-instance_method" title="#insertar (instance method)">#<strong>insertar</strong>(ali, gr)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Como los atributos de alimentos y gramos son listas, en este método insertamos el conjunto de alimentos y de gramos, en sus respectivas listas.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#por_lipidos-instance_method" title="#por_lipidos (instance method)">#<strong>por_lipidos</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>ello obtenemos los lípidos de cada uno de los alimentos, de acuerdo a sus gramos.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#por_proteinas-instance_method" title="#por_proteinas (instance method)">#<strong>por_proteinas</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Calcular el porcentaje de proteínas del plato.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#to_s-instance_method" title="#to_s (instance method)">#<strong>to_s</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Formatear la salida por pantalla de los atributos de la clase.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#vct-instance_method" title="#vct (instance method)">#<strong>vct</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Calcular el valor energético total del plato.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+  <div id="constructor_details" class="method_details_list">
+  <h2>Constructor Details</h2>
+  
+    <div class="method_details first">
+  <h3 class="signature first" id="initialize-instance_method">
+  
+    #<strong>initialize</strong>(nombre)  &#x21d2; <tt><span class='object_link'><a href="" title="P7::Plato (class)">Plato</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Initialize que tiene como atributos el conjunto de alimentos, con sus respectivos gramos.</p>
+
+<p>Nombre del plato.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>nombre</span>
+      
+      
+        <span class='type'>(<tt>&lt;Type&gt;</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+24
+25
+26
+27
+28</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/P7/plato.rb', line 24</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_initialize'>initialize</span> <span class='lparen'>(</span><span class='id identifier rubyid_nombre'>nombre</span><span class='rparen'>)</span>
+    <span class='ivar'>@nombre</span> <span class='op'>=</span> <span class='id identifier rubyid_nombre'>nombre</span>
+    <span class='ivar'>@alimentos</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../P7.html" title="P7 (module)">P7</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="Lista.html" title="P7::Lista (class)">Lista</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="Lista.html#initialize-instance_method" title="P7::Lista#initialize (method)">new</a></span></span>
+    <span class='ivar'>@gramos</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../P7.html" title="P7 (module)">P7</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="Lista.html" title="P7::Lista (class)">Lista</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="Lista.html#initialize-instance_method" title="P7::Lista#initialize (method)">new</a></span></span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+  
+</div>
+
+  <div id="instance_attr_details" class="attr_details">
+    <h2>Instance Attribute Details</h2>
+    
+      
+      <span id=""></span>
+      <div class="method_details first">
+  <h3 class="signature first" id="alimentos-instance_method">
+  
+    #<strong>alimentos</strong>  &#x21d2; <tt>Object</tt>  <span class="extras">(readonly)</span>
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Alimentos del plato</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Object</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the current value of alimentos</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+15
+16
+17</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/P7/plato.rb', line 15</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_alimentos'>alimentos</span>
+  <span class='ivar'>@alimentos</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id=""></span>
+      <div class="method_details ">
+  <h3 class="signature " id="gramos-instance_method">
+  
+    #<strong>gramos</strong>  &#x21d2; <tt>Object</tt>  <span class="extras">(readonly)</span>
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Gramos de cada uno de los alimentos.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Object</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the current value of gramos</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+15
+16
+17</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/P7/plato.rb', line 15</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_gramos'>gramos</span>
+  <span class='ivar'>@gramos</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id=""></span>
+      <div class="method_details ">
+  <h3 class="signature " id="nombre-instance_method">
+  
+    #<strong>nombre</strong>  &#x21d2; <tt>Object</tt>  <span class="extras">(readonly)</span>
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Nombre del plato</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Object</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the current value of nombre</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+15
+16
+17</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/P7/plato.rb', line 15</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_nombre'>nombre</span>
+  <span class='ivar'>@nombre</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id=""></span>
+      <div class="method_details ">
+  <h3 class="signature " id="por_ch-instance_method">
+  
+    #<strong>por_ch</strong>  &#x21d2; <tt>Object</tt>  <span class="extras">(readonly)</span>
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Calcular el porcentaje de hidratos de carbono del plato. Para ello obtenemos los hidratos  de carbono de cada uno de los alimentos,  de acuerdo a sus gramos.</p>
+
+<p>Se devuelve el porcentaje de los hidratos de  carbono.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Object</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+15
+16
+17</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/P7/plato.rb', line 15</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_por_ch'>por_ch</span>
+  <span class='ivar'>@por_ch</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id=""></span>
+      <div class="method_details ">
+  <h3 class="signature " id="por_lip-instance_method">
+  
+    #<strong>por_lip</strong>  &#x21d2; <tt>Object</tt>  <span class="extras">(readonly)</span>
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Porcentaje de Lípidos del plato.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Object</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the current value of por_lip</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+15
+16
+17</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/P7/plato.rb', line 15</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_por_lip'>por_lip</span>
+  <span class='ivar'>@por_lip</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id=""></span>
+      <div class="method_details ">
+  <h3 class="signature " id="por_prot-instance_method">
+  
+    #<strong>por_prot</strong>  &#x21d2; <tt>Object</tt>  <span class="extras">(readonly)</span>
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Porcentaje de Proteínas del plato.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Object</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the current value of por_prot</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+15
+16
+17</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/P7/plato.rb', line 15</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_por_prot'>por_prot</span>
+  <span class='ivar'>@por_prot</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id=""></span>
+      <div class="method_details ">
+  <h3 class="signature " id="vctotal-instance_method">
+  
+    #<strong>vctotal</strong>  &#x21d2; <tt>Object</tt>  <span class="extras">(readonly)</span>
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Valor energético total del palto.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Object</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the current value of vctotal</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+15
+16
+17</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/P7/plato.rb', line 15</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_vctotal'>vctotal</span>
+  <span class='ivar'>@vctotal</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="insertar-instance_method">
+  
+    #<strong>insertar</strong>(ali, gr)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Como los atributos de alimentos y gramos son listas, en este método insertamos el conjunto de alimentos y de gramos, en sus respectivas listas.</p>
+
+<p>Conjunto de Alimentos Conjunto de Gramos de los alimentos.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>ali</span>
+      
+      
+        <span class='type'>(<tt>&lt;Type&gt;</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>gr</span>
+      
+      
+        <span class='type'>(<tt>&lt;Type&gt;</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>&lt;description&gt;</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+40
+41
+42
+43
+44
+45
+46
+47
+48</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/P7/plato.rb', line 40</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_insertar'>insertar</span> <span class='lparen'>(</span><span class='id identifier rubyid_ali'>ali</span><span class='comma'>,</span> <span class='id identifier rubyid_gr'>gr</span><span class='rparen'>)</span>
+    <span class='kw'>for</span> <span class='id identifier rubyid_i'>i</span> <span class='kw'>in</span> <span class='lparen'>(</span><span class='int'>0</span><span class='op'>...</span><span class='id identifier rubyid_ali'>ali</span><span class='period'>.</span><span class='id identifier rubyid_size'>size</span><span class='rparen'>)</span> <span class='kw'>do</span>
+        <span class='ivar'>@alimentos</span><span class='period'>.</span><span class='id identifier rubyid_insert_tail'>insert_tail</span><span class='lparen'>(</span><span class='id identifier rubyid_ali'>ali</span><span class='lbracket'>[</span><span class='id identifier rubyid_i'>i</span><span class='rbracket'>]</span><span class='rparen'>)</span>
+    <span class='kw'>end</span>
+
+    <span class='kw'>for</span> <span class='id identifier rubyid_i'>i</span> <span class='kw'>in</span> <span class='lparen'>(</span><span class='int'>0</span><span class='op'>...</span><span class='id identifier rubyid_gr'>gr</span><span class='period'>.</span><span class='id identifier rubyid_size'>size</span><span class='rparen'>)</span> <span class='kw'>do</span>
+        <span class='ivar'>@gramos</span><span class='period'>.</span><span class='id identifier rubyid_insert_tail'>insert_tail</span><span class='lparen'>(</span><span class='id identifier rubyid_gr'>gr</span><span class='lbracket'>[</span><span class='id identifier rubyid_i'>i</span><span class='rbracket'>]</span><span class='rparen'>)</span>
+    <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="por_lipidos-instance_method">
+  
+    #<strong>por_lipidos</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>ello obtenemos los lípidos de cada uno de los alimentos, de acuerdo a sus gramos.</p>
+
+<p>Se devuelve el porcentaje de los lípidos.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Object</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/P7/plato.rb', line 99</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_por_lipidos'>por_lipidos</span>
+    <span class='id identifier rubyid_gr'>gr</span> <span class='op'>=</span> <span class='ivar'>@gramos</span><span class='period'>.</span><span class='id identifier rubyid_collect'>collect</span><span class='lbrace'>{</span><span class='op'>|</span><span class='id identifier rubyid_x'>x</span><span class='op'>|</span> <span class='id identifier rubyid_x'>x</span><span class='rbrace'>}</span>
+    <span class='id identifier rubyid_lip'>lip</span> <span class='op'>=</span> <span class='ivar'>@alimentos</span><span class='period'>.</span><span class='id identifier rubyid_collect'>collect</span><span class='lbrace'>{</span><span class='op'>|</span><span class='id identifier rubyid_x'>x</span><span class='op'>|</span> <span class='id identifier rubyid_x'>x</span><span class='period'>.</span><span class='id identifier rubyid_lipidos'>lipidos</span> <span class='op'>*</span> <span class='int'>4</span><span class='rbrace'>}</span>
+    <span class='id identifier rubyid_v_ener'>v_ener</span> <span class='op'>=</span> <span class='ivar'>@alimentos</span><span class='period'>.</span><span class='id identifier rubyid_collect'>collect</span><span class='lbrace'>{</span><span class='op'>|</span><span class='id identifier rubyid_x'>x</span><span class='op'>|</span> <span class='id identifier rubyid_x'>x</span><span class='period'>.</span><span class='id identifier rubyid_valorener'>valorener</span><span class='rbrace'>}</span>
+
+    <span class='id identifier rubyid_v_ener_total'>v_ener_total</span> <span class='op'>=</span> <span class='int'>0</span>
+    <span class='id identifier rubyid_lipidos_total'>lipidos_total</span> <span class='op'>=</span> <span class='int'>0</span>
+
+    <span class='kw'>for</span> <span class='id identifier rubyid_i'>i</span> <span class='kw'>in</span> <span class='lparen'>(</span><span class='int'>0</span><span class='op'>...</span><span class='id identifier rubyid_v_ener'>v_ener</span><span class='period'>.</span><span class='id identifier rubyid_size'>size</span><span class='rparen'>)</span>
+        <span class='id identifier rubyid_v_ener_total'>v_ener_total</span> <span class='op'>+=</span> <span class='lparen'>(</span><span class='id identifier rubyid_v_ener'>v_ener</span><span class='lbracket'>[</span><span class='id identifier rubyid_i'>i</span><span class='rbracket'>]</span><span class='op'>*</span><span class='id identifier rubyid_gr'>gr</span><span class='lbracket'>[</span><span class='id identifier rubyid_i'>i</span><span class='rbracket'>]</span><span class='rparen'>)</span>
+        <span class='id identifier rubyid_lipidos_total'>lipidos_total</span> <span class='op'>+=</span> <span class='lparen'>(</span><span class='id identifier rubyid_lip'>lip</span><span class='lbracket'>[</span><span class='id identifier rubyid_i'>i</span><span class='rbracket'>]</span><span class='op'>*</span><span class='id identifier rubyid_gr'>gr</span><span class='lbracket'>[</span><span class='id identifier rubyid_i'>i</span><span class='rbracket'>]</span><span class='rparen'>)</span>
+    <span class='kw'>end</span>
+    
+    <span class='ivar'>@por_lip</span> <span class='op'>=</span> <span class='id identifier rubyid_lipidos_total'>lipidos_total</span> <span class='op'>*</span> <span class='int'>100</span> <span class='op'>/</span> <span class='id identifier rubyid_v_ener_total'>v_ener_total</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="por_proteinas-instance_method">
+  
+    #<strong>por_proteinas</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Calcular el porcentaje de proteínas del plato. Para ello obtenemos las proteínas de cada uno de los alimentos, de acuerdo a sus gramos.</p>
+
+<p>Se devuelve el porcentaje de las proteínas.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Object</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/P7/plato.rb', line 75</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_por_proteinas'>por_proteinas</span>
+    <span class='id identifier rubyid_gr'>gr</span> <span class='op'>=</span> <span class='ivar'>@gramos</span><span class='period'>.</span><span class='id identifier rubyid_collect'>collect</span><span class='lbrace'>{</span><span class='op'>|</span><span class='id identifier rubyid_x'>x</span><span class='op'>|</span> <span class='id identifier rubyid_x'>x</span><span class='rbrace'>}</span>
+    <span class='id identifier rubyid_prot'>prot</span> <span class='op'>=</span> <span class='ivar'>@alimentos</span><span class='period'>.</span><span class='id identifier rubyid_collect'>collect</span><span class='lbrace'>{</span><span class='op'>|</span><span class='id identifier rubyid_x'>x</span><span class='op'>|</span> <span class='id identifier rubyid_x'>x</span><span class='period'>.</span><span class='id identifier rubyid_proteinas'>proteinas</span> <span class='op'>*</span> <span class='int'>4</span><span class='rbrace'>}</span>
+    <span class='id identifier rubyid_v_ener'>v_ener</span> <span class='op'>=</span> <span class='ivar'>@alimentos</span><span class='period'>.</span><span class='id identifier rubyid_collect'>collect</span><span class='lbrace'>{</span><span class='op'>|</span><span class='id identifier rubyid_x'>x</span><span class='op'>|</span> <span class='id identifier rubyid_x'>x</span><span class='period'>.</span><span class='id identifier rubyid_valorener'>valorener</span><span class='rbrace'>}</span>
+
+    <span class='id identifier rubyid_v_ener_total'>v_ener_total</span> <span class='op'>=</span> <span class='int'>0</span>
+    <span class='id identifier rubyid_proteinas_total'>proteinas_total</span> <span class='op'>=</span> <span class='int'>0</span>
+
+    <span class='kw'>for</span> <span class='id identifier rubyid_i'>i</span> <span class='kw'>in</span> <span class='lparen'>(</span><span class='int'>0</span><span class='op'>...</span><span class='id identifier rubyid_v_ener'>v_ener</span><span class='period'>.</span><span class='id identifier rubyid_size'>size</span><span class='rparen'>)</span>
+        <span class='id identifier rubyid_v_ener_total'>v_ener_total</span> <span class='op'>+=</span> <span class='lparen'>(</span><span class='id identifier rubyid_v_ener'>v_ener</span><span class='lbracket'>[</span><span class='id identifier rubyid_i'>i</span><span class='rbracket'>]</span><span class='op'>*</span><span class='id identifier rubyid_gr'>gr</span><span class='lbracket'>[</span><span class='id identifier rubyid_i'>i</span><span class='rbracket'>]</span><span class='rparen'>)</span>
+        <span class='id identifier rubyid_proteinas_total'>proteinas_total</span> <span class='op'>+=</span> <span class='lparen'>(</span><span class='id identifier rubyid_prot'>prot</span><span class='lbracket'>[</span><span class='id identifier rubyid_i'>i</span><span class='rbracket'>]</span><span class='op'>*</span><span class='id identifier rubyid_gr'>gr</span><span class='lbracket'>[</span><span class='id identifier rubyid_i'>i</span><span class='rbracket'>]</span><span class='rparen'>)</span>
+    <span class='kw'>end</span>
+    
+    <span class='ivar'>@por_prot</span> <span class='op'>=</span> <span class='id identifier rubyid_proteinas_total'>proteinas_total</span> <span class='op'>*</span> <span class='int'>100</span> <span class='op'>/</span> <span class='id identifier rubyid_v_ener_total'>v_ener_total</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="to_s-instance_method">
+  
+    #<strong>to_s</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Formatear la salida por pantalla de los atributos de la clase.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/P7/plato.rb', line 53</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_to_s'>to_s</span> 
+    <span class='id identifier rubyid_aux1'>aux1</span> <span class='op'>=</span> <span class='ivar'>@alimentos</span><span class='period'>.</span><span class='id identifier rubyid_head'>head</span>
+    <span class='id identifier rubyid_aux2'>aux2</span> <span class='op'>=</span> <span class='ivar'>@gramos</span><span class='period'>.</span><span class='id identifier rubyid_head'>head</span>
+
+    <span class='id identifier rubyid_cadena'>cadena</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_end'>&quot;</span></span>
+
+    <span class='kw'>while</span><span class='lparen'>(</span><span class='id identifier rubyid_aux1'>aux1</span> <span class='op'>!=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+        <span class='id identifier rubyid_cadena'>cadena</span> <span class='op'>&lt;&lt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_aux1'>aux1</span><span class='period'>.</span><span class='id identifier rubyid_value'>value</span><span class='period'>.</span><span class='id identifier rubyid_nombre'>nombre</span><span class='embexpr_end'>}</span><span class='tstring_content'> </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_aux2'>aux2</span><span class='period'>.</span><span class='id identifier rubyid_value'>value</span><span class='embexpr_end'>}</span><span class='tstring_content'>gr, </span><span class='tstring_end'>&quot;</span></span>
+        <span class='id identifier rubyid_aux1'>aux1</span> <span class='op'>=</span> <span class='id identifier rubyid_aux1'>aux1</span><span class='period'>.</span><span class='id identifier rubyid_next'>next</span>
+        <span class='id identifier rubyid_aux2'>aux2</span> <span class='op'>=</span> <span class='id identifier rubyid_aux2'>aux2</span><span class='period'>.</span><span class='id identifier rubyid_next'>next</span>
+    <span class='kw'>end</span>
+    <span class='id identifier rubyid_cadena'>cadena</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="vct-instance_method">
+  
+    #<strong>vct</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Calcular el valor energético total del plato. Para ello se obtiene el valor energético de cada uno de los alimentos del plato.</p>
+
+<p>Se devuelve el valor energético total del plato.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Object</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+149
+150
+151
+152
+153
+154
+155
+156
+157</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/P7/plato.rb', line 149</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_vct'>vct</span>
+    <span class='id identifier rubyid_v_ener'>v_ener</span> <span class='op'>=</span> <span class='ivar'>@alimentos</span><span class='period'>.</span><span class='id identifier rubyid_collect'>collect</span><span class='lbrace'>{</span><span class='op'>|</span><span class='id identifier rubyid_x'>x</span><span class='op'>|</span> <span class='id identifier rubyid_x'>x</span><span class='period'>.</span><span class='id identifier rubyid_valorener'>valorener</span><span class='rbrace'>}</span>
+    <span class='id identifier rubyid_v_ener_total'>v_ener_total</span> <span class='op'>=</span> <span class='int'>0</span>
+    <span class='kw'>for</span> <span class='id identifier rubyid_i'>i</span> <span class='kw'>in</span> <span class='lparen'>(</span><span class='int'>0</span><span class='op'>...</span><span class='id identifier rubyid_v_ener'>v_ener</span><span class='period'>.</span><span class='id identifier rubyid_size'>size</span><span class='rparen'>)</span>
+        <span class='id identifier rubyid_v_ener_total'>v_ener_total</span> <span class='op'>+=</span> <span class='id identifier rubyid_v_ener'>v_ener</span><span class='lbracket'>[</span><span class='id identifier rubyid_i'>i</span><span class='rbracket'>]</span>
+    <span class='kw'>end</span>
+
+    <span class='ivar'>@vctotal</span> <span class='op'>=</span> <span class='id identifier rubyid_v_ener_total'>v_ener_total</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+      <div id="footer">
+  Generated on Thu Dec 12 10:29:11 2019 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.9.20 (ruby-2.7.0).
+</div>
+
+    </div>
+  </body>
+</html>
